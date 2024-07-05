@@ -74,7 +74,6 @@ public class AIChatbot extends Application {
         // Clear the input field
         inputField.clear();
 
-        // Call the chatbot API
         // Call the chatbot API asynchronously
         getChatbotResponse(userInput).thenAccept(response ->
                 Platform.runLater(() -> addMessage("AI Bot: " + response, Pos.TOP_LEFT, "#FFFFFF"))
